@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Health Insurance</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	
+	</head>
+	<body>
+		<div class="header center">
+			<div class="hero-header paddingsix center">
+				<div class="title">
+					<h1> Tailor-made plans, filtered down just for your requirements. </h1>
+				</div>
+				<div class="menu center">
+					<ul class="nav">
+						<li><a href="#">Bike</a></li>
+						<li class=""><a href="#">Car</a></li>
+						<li class="active"><a href="#">health</a></li>
+						<li class=""><a href="#">travel</a></li>
+						<li class=""><a href="#">Term life</a></li>
+					</ul>
+				</div>
+				<div class="form-widget">
+					<div class="form">
+						<div id="gender-selection" tabindex="-1" class="gender-selection drop-downs">
+							<div class="form-label"> Your Gender </div>
+							<div class="selection"> Male </div>
+							<div id="gender-dropdown" data-target=".selection" class="dropdown-list">
+								<div class="heading"> Select the gender</div>
+								<div id="male" data-show="male" class="element selected"> Male </div>
+								<div id="female" data-show="female" class="element"> Female </div>
+							</div>
+						</div>
+						<div id="members" class="members-to-insured drop-downs">
+							<div>
+								<div class="input-label area-pincode-placeholder" id="members-label"> Members to be insured </div>
+								<div> <span id="members-insured">  </span> </div>
+							</div>
+						</div>	
+						<div id="modal-container" class="modal-container hide" style="">
+							<div class="modal--content">
+								<div class="header">
+									WHO DO YOU WANT TO INSURE?
+								</div>
+								<div tabindex="-1" id="close-member" class="close-member"> X
+								</div>
+								<div class="select-list">
+									<div> <input value="you" id="checked-you" checked type="checkbox"/> <span id="content-you" class="checkboxes-padding"> You </span> </div>
+									<div> <input value="Father" id="checked-father" type="checkbox"/> <span class="checkboxes-padding"> Father </span> </div>
+									<div> <input value="mother" id="checked-mother" type="checkbox"/> <span class="checkboxes-padding"> Mother </span> </div>
+									<div> <input value="daughter" id="checked-daughter" type="checkbox"/> <span class="checkboxes-padding"> Daughter </span> </div>
+									<div> <input value="son" id="checked-son" type="checkbox"/> <span class="checkboxes-padding"> Son	</span> </div>
+								</div>
+								<div class="button center">
+									<button id="continue-member"> Continue </button>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="area-pincode pin-code drop-downs">
+							
+							
+							<div id="pincode-text-holder" class="area-pincode-placeholder pin-label"> 
+								<label id="pincode-text"  class="input-label"> Your Pincode </label>
+							</div>
+							
+							
+							<div id="enter-pin" class="hide">
+								<input id="pincode-input" class="pincode" tabindex="-1" type="text"> 
+							</div>
+							
+							
+							
+							<div class="area-pincode drop-downs hide">
+								<label id="area-pincode-text" class="input-label"> Area Pincode </label>
+							</div>
+							
+							<div id="container-modal-pincode" class="modal-container" style="">
+								<div class="modal--content">
+									<div class="header">
+										PLEASE SELECT YOUR AND YOUR PARENTS' PINCODE
+									</div>
+									<div tabindex="-1" id="modal-pincode" class="close-modal-pincode"> X
+									</div>
+									<div class="pincode-fields">
+										<div class="bot-border"> 
+											<span id="modal-your-pin" class="input-label"> Your Pincode &nbsp; &nbsp; &nbsp;</span>
+											<input id="modal-your-pin-input" style="" class="go-left hide" type="text"/> </div>
+										<br/>
+										<div class="bot-border"> 
+											<span id="modal-parents-pin" class="input-label"> Parents Pincode </span>  
+											<input id="modal-parents-pin-input" class="go-left hide" type="text"/> 
+										</div>
+									</div>
+									<div class="button center">
+										<button> Done </button>
+									</div>
+								</div>
+							</div>
+						
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
